@@ -12,5 +12,6 @@ router.post('/test', ProductController.test);
 
 //Routes of the application
 router.post('/save', ProductController.save);
+router.get('/products/:last?', ProductController.getProducts);
 
 module.exports = router;
